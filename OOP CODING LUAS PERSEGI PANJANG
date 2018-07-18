@@ -1,21 +1,24 @@
 #include <iostream>
 using namespace std;
 
-class Rectangle {
+class PersegiPanjang 
+{
     int lebar, tinggi;
-  public:
-    void set_values (int,int);
-    int area() {return lebar*tinggi;}
+   public:
+    void set_nilai (int,int);
+    int Luas() {return lebar*tinggi;}
 };
 
-void Rectangle::set_values (int x, int y) {
+void PersegiPanjang::set_nilai (int x, int y)
+{
   lebar  = x;
   tinggi = y;
 }
 
-int main () {
-  Rectangle rect;
-  rect.set_values (3,4);
-  cout << "area: " << rect.area();
+int main ()
+{
+  PersegiPanjang persegi;
+  persegi.set_nilai (5,9);
+  cout << "Luas Persegi Panjang: " << persegi.Luas();
   return 0;
 }
